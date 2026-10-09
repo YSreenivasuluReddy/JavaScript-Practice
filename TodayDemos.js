@@ -86,10 +86,10 @@ setTimeout(function(){
 })
 
 // function with arrow function as callback
-function outerfunction(c,d,callback){
+function AdditionFuntion(c,d,callback){
     callback(20, 30);
     console.log(`The sum of ${c} and ${d} is = ${c + d}.` + '\n' + 'This is the outer function output');
 }
-outerfunction(40, 50, (a, b) => {
+AdditionFuntion(40, 50, (a, b) => {
     console.log(`The sum of ${a} and ${b} is = ${a + b}.` + '\n' + 'This is the inner function output');
 })
